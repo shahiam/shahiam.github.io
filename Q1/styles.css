@@ -1,0 +1,341 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-image: url('images/bg.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body.about {
+    background-image: url('images/aboutbg.gif');
+}
+
+body.education-page {
+    background-image: url('images/educationbg.gif');
+    background-position: center;
+}
+
+body.skills-page {
+    background-image: url('images/skillbg.gif');
+    background-position: 0cap;
+}
+
+.container {
+    text-align: center;
+    padding: 60px;
+    background: linear-gradient(135deg, rgba(51, 51, 51, 0.9), rgba(30, 30, 30, 0.9));
+    color: white;
+    width: 95%;
+    max-width: 2000px;
+    min-height: 850px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+body.about-page .container,
+body.education-page .container,
+body.skills-page .container {
+    justify-content: flex-start;
+    align-items: center;
+}
+
+body.about-page .container h1,
+body.education-page .container h1,
+body.skills-page .container h1 {
+    font-family: 'Brush Script MT', serif;
+    font-size: 6em;
+    font-weight: bold;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.container h1 {
+    font-family: 'Brush Script MT', serif;
+    font-size: 12em;
+    font-weight: bold;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+nav {
+    white-space: nowrap;
+    margin-top: 20px;
+    font-family: 'Garamond', serif;
+    font-size: 2em;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 600px;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    font-size: 1.2em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    transition: color 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #00ccff;
+    text-decoration: underline;
+}
+
+/* Styles for the About page sections */
+body.about-page .content-wrapper {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+body.about-page .profile-section {
+    display: flex;
+    align-items: center;
+    height: 20%;
+    margin-bottom: 20px;
+}
+
+body.about-page .profile-pic {
+    max-width: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+body.about-page .profile-text {
+    flex: 1;
+    text-align: left;
+}
+
+body.about-page .profile-text p {
+    font-size: 1.1em;
+    margin: 0;
+}
+
+body.about-page .birthplace-section {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+}
+
+body.about-page .birthplace-text {
+    margin-bottom: 20px;
+}
+
+body.about-page .birthplace-text h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #00ccff;
+}
+
+body.about-page .birthplace-text p {
+    font-size: 1.1em;
+    margin: 0;
+}
+
+body.about-page .local-pics {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+body.about-page .local-pics img {
+    max-width: 300px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Styles for the Education page sections */
+body.education-page .content-wrapper {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+}
+
+body.education-page .education-section {
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    margin-bottom: 10px;
+}
+
+body.education-page .institution-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 100%;
+    align-items: flex-start;
+}
+
+body.education-page .institution-item {
+    width: 18%;
+    margin: 5px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body.education-page .institution-item img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    margin-bottom: 5px;
+}
+
+body.education-page .institution-item p {
+    font-size: 0.9em;
+    margin: 0;
+    color: #ffffff;
+    text-align: center;
+    padding: 0 5px;
+    max-width: 100%;
+}
+
+body.education-page .achievements-section {
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+    margin-top: -10px;
+}
+
+body.education-page .achievements-text {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+}
+
+body.education-page .achievements-text h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #00ccff;
+}
+
+body.education-page .achievements-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 100%;
+}
+
+body.education-page .achievement-column {
+    width: 45%;
+    padding: 10px;
+    background: rgba(40, 40, 40, 0.8);
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+body.education-page .achievement-column h3 {
+    font-size: 1.5em;
+    color: #00ccff;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+body.education-page .achievement-column ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+    text-align: left;
+}
+
+body.education-page .achievement-column ol li {
+    font-size: 1em;
+    margin-bottom: 8px;
+    color: #e0e0e0;
+}
+
+/* Styles for the Skills page sections */
+body.skills-page .content-wrapper {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 20px 0;
+}
+
+body.skills-page .skills-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+body.skills-page .skill-item {
+    background: rgba(40, 40, 40, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+}
+
+body.skills-page .skill-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    background: rgba(50, 50, 50, 0.9);
+}
+
+body.skills-page .skill-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+body.skills-page .skill-item p {
+    font-size: 1em;
+    color: #ffffff;
+    text-align: center;
+    line-height: 1.4;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+    display: block;
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+a:hover {
+    text-decoration: underline;
+}
