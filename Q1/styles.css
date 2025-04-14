@@ -1,4 +1,3 @@
-/* Reset default styles */
 * {
     margin: 0;
     padding: 0;
@@ -247,6 +246,12 @@ body.education-page .achievements-container {
     height: 100%;
 }
 
+body.education-page .achievement-column:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    background: rgba(50, 50, 50, 0.9);
+}
+
 body.education-page .achievement-column {
     width: 45%;
     padding: 10px;
@@ -351,7 +356,7 @@ a:hover {
     }
 
     .container h1 {
-        font-size: 2.5rem; /* Reduced but still readable */
+        font-size: 2.5rem; 
     }
 
     body.about-page .container h1,
@@ -361,74 +366,74 @@ a:hover {
     }
 
     nav {
-        flex-direction: column; /* Stack navigation vertically */
+        flex-direction: column; 
         font-size: 1rem;
-        white-space: normal; /* Allow text to wrap */
-        min-width: auto; /* Remove min-width */
+        white-space: normal; 
+        min-width: auto; 
     }
 
     nav a {
-        margin: 5px 0; /* Smaller margins for mobile */
+        margin: 5px 0; 
         font-size: 1rem;
     }
 
     /* About Page Adjustments */
     body.about-page .profile-section {
-        flex-direction: column; /* Stack image and text */
+        flex-direction: column; 
         text-align: center;
         height: auto;
         margin-bottom: 15px;
     }
 
     body.about-page .profile-pic {
-        max-width: 100px; /* Smaller profile pic */
+        max-width: 100px; 
         margin-right: 0;
         margin-bottom: 15px;
     }
 
     body.about-page .profile-text {
-        text-align: center; /* Center text on mobile */
+        text-align: center; 
     }
 
     body.about-page .local-pics {
-        flex-direction: column; /* Stack images vertically */
+        flex-direction: column; 
         align-items: center;
     }
 
     body.about-page .local-pics img {
-        max-width: 100%; /* Full width on mobile */
+        max-width: 100%; 
         margin: 10px 0;
     }
 
     /* Education Page Adjustments */
     body.education-page .institution-gallery {
-        flex-direction: column; /* Stack institutions */
+        flex-direction: column; 
         align-items: center;
     }
 
     body.education-page .institution-item {
-        width: 80%; /* Wider on mobile */
+        width: 80%; 
         margin: 15px 0;
     }
 
     body.education-page .institution-item img {
-        width: 150px; /* Smaller images */
+        width: 150px; 
         height: 150px;
     }
 
     body.education-page .achievements-container {
-        flex-direction: column; /* Stack achievements */
+        flex-direction: column; 
         align-items: center;
     }
 
     body.education-page .achievement-column {
-        width: 90%; /* Full width on mobile */
+        width: 90%; 
         margin-bottom: 15px;
     }
 
     /* Skills Page Adjustments */
     body.skills-page .skills-section {
-        grid-template-columns: repeat(2, 1fr); /* Two columns on mobile */
+        grid-template-columns: repeat(2, 1fr); 
         gap: 15px;
     }
 
@@ -442,11 +447,11 @@ a:hover {
     }
 
     body.skills-page .skill-item p {
-        font-size: 0.9em; /* Slightly smaller text */
+        font-size: 0.9em; 
     }
 
     a {
-        font-size: 1rem; /* Smaller link text */
+        font-size: 1rem; 
         margin-top: 15px;
     }
 }
