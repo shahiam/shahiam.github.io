@@ -144,6 +144,18 @@ button:hover {
         font-size: 6em;
     }
 
+    nav {
+        margin-bottom: 15px;
+        font-size: 1.5em;
+        min-width: 150px;
+        padding: 5px 0;
+    }
+
+    nav a {
+        margin: 0 10px;
+        font-size: 1em;
+    }
+
     textarea {
         height: 250px;
         font-size: 1em;
@@ -156,5 +168,13 @@ button:hover {
 
     .result {
         font-size: 0.9em;
+        margin: 15px auto;
+        padding: 15px;
     }
+}
+
+/* Ensure images don’t overflow */
+img {
+    max-width: 100%;
+    height: auto;
 }
