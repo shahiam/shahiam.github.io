@@ -357,6 +357,7 @@ a:hover {
 
     .container h1 {
         font-size: 2.5rem; 
+        font-family: 'Brush Script MT', serif;
     }
 
     body.about-page .container h1,
